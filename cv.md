@@ -1,7 +1,6 @@
-
-#Konstantin Matveev
-********************
-
+# Konstantin Matveev
+**********************
+![C:\Users\mat_k\OneDrive\Рабочий стол\Учеба\RSSchool\rsschool-cv\img\IMG_20210509_190252.jpg]
 **My contacts**\
     GitHub NikeName: Mat-Kon\
     Discord NikeName: Konstantin(@Mat-Kon)
