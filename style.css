@@ -4,13 +4,14 @@ html, body {
     margin: auto;
     padding: 0;
 }
-table {
-    border-collapse: collapse;
+
+body {
+    background-image: url(/rsschool-cv/img/back-img.jpg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
 }
-table.border td, table.border th {
-    padding: 5px;
-    border: 1px solid #c0c0c0;
-}
-table.border th {
-    background: #e0e0e0;
-}
+
+
+
