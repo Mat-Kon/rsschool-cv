@@ -6,11 +6,47 @@ html, body {
 }
 
 body {
+    width: 1080px;
+    height: 1920px;
     background-image: url(/rsschool-cv/img/back-img.jpg);
-    background-origin: border-box;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+}
+
+.MyName {
+    margin: 1% 0px 5px 52%;
+    text-decoration: underline;
+}
+
+.ImageAvatar {
+    margin: 1% 1% 2% 10%;
+}
+
+.Contacts {
+    padding: 1% 4% 1% 1%;
+    margin: 0% 60% 0% 8%;
+    background-color: wheat;
+}
+
+.AboutMe {
+    width: 50%;
+    float: right;
+    padding: 1% 10% 1% 1%;
+    background-color: wheat;
+}
+
+.CodeExemple {
+    padding: 1px 1px 9px 34px;
+    margin: 0% 1% 0% 8%;
+    background-color: wheat;
+    width: 311px;
+    height: 25px;
+}
+
+#Code {
+    border: 1px double black;
+    width: 341px;
+    background-color: wheat;
 }
 
 
