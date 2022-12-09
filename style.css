@@ -1,4 +1,4 @@
-html, body {
+html,{
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     margin: auto;
@@ -6,29 +6,61 @@ html, body {
 }
 
 body {
+    position: absolute;
+    left: 50px;
+    right: 50px;
     width: 1080px;
-    height: 1920px;
-    background-image: url(/rsschool-cv/img/back-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 1900px;
+    margin: auto;
+}
+
+
+header {
+    position: relative;
+    height: 40px;
+    top: 0px;
+    background-color: wheat;
+    border-bottom: 3px solid black;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+ul {
+    position: relative;
+    padding: 1px 0px 10px 39px;
+}
+
+summary {
+    position: relative;
+
 }
 
 .MyName {
-    margin: 1% 0px 5px 52%;
-    text-decoration: underline;
+    position: relative;
+    margin: 0;
+    left: 610px;
 }
 
 .ImageAvatar {
-    margin: 1% 1% 2% 10%;
+    position: relative;
+    margin: 0px;
+    padding: 39px;
+    background-color: wheat;
 }
 
 .Contacts {
-    padding: 1% 4% 1% 1%;
-    margin: 0% 60% 0% 8%;
+    width: fit-content;
+    position: relative;
+    padding: 1px 1px;
+    margin: -4px 0px;
     background-color: wheat;
 }
 
 .AboutMe {
+    position: relative;
     width: 50%;
     float: right;
     padding: 1% 10% 1% 1%;
@@ -36,14 +68,16 @@ body {
 }
 
 .CodeExemple {
+    position: relative;
     padding: 1px 1px 9px 34px;
-    margin: 0% 1% 0% 8%;
+    margin: 0;
     background-color: wheat;
     width: 311px;
     height: 25px;
 }
 
 #Code {
+    position: relative;
     border: 1px double black;
     width: 341px;
     background-color: wheat;
