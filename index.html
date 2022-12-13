@@ -8,25 +8,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body> 
-
     <header>  
-        <h1 ><span class="MyName">Konstantin Matveev</span></h1>
+        <nav class="Menu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="#About">About me</a></li>
+              <li><a href="#Contact">My contacts</a></li>
+            </ul>
+        </nav>
     </header> 
+
+    <section class="AboutMe">
+        <h1 >Konstantin Matveev</h1>
+
+        <article id="About">
+            <h2>About me</h2>
+
+            <p>I am so positive and fun. I like the work in which you can see the result. I like play guitar and listen music in free time.
+                I want to travel more so I changed my profession at the age of 30. 
+                <ol>My strengths:
+                    <li>Punctuality - I value my own and other people's time.</li>
+                    <li>Communication skills - I easily find a common language with people.</li>
+                </ol>            
+                <p>Then at a personal meeting.</p>
+            </p>
+        
+        </article>
+    </section>
+    
 
     <img class="ImageAvatar" src="/rsschool-cv/img/foto.jpg" alt="Avatar" width="250" height="300"/>
 
-    <article class="AboutMe">
-         About me
-        I am 29 years old. Graduated from college in 2008, univesity in 2012. My specialty is an engineer electrician. 
-        Last 8 years I work a builder. I want to master a new specialty for work from any corner of the world. 
-       
-        My strengths:
-        1. Punctuality - I value my own and other people's time.
-        2. Communication skills - I easily find a common language with people.
-        Then at a personal meeting.
-    </article>
-
-    <div class="Contacts">
+    <div class="Contacts" id="Contact">
         <ul>My contacts
             <li>NikeName: Mat-Kon</li>
             <li>Discord NikeName: Konstantin(@Mat-Kon)</li>
@@ -43,7 +56,15 @@
         </pre> 
     </details>
 
+    <footer>
+        <img src="/rsschool-cv/img/rs_logo.svg" alt="LogoRS" width="100" height="60">
+        <a href="https://rs.school/js/">RSSchool</a>
 
-    <footer></footer>
+        <section itemscope itemtype="http://schema.org/Organization">
+            <h2 itemprop="name">Konstantin Matveev</h2>
+            <p class="LinkDiscort">Link in Discord: <span itemprop="url"><a href="https://github.com/Mat-Kon">Discort</a> </span> </p>
+
+        </section>
+    </footer>
 </body>
 </html>
