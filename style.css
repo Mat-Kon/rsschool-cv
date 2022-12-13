@@ -22,14 +22,16 @@ body {
 }
 
 header {
-    position: fixed;
-    left: 219px;
+    position: sticky;
+    left: 13em;
     height: 40px;
     width: 1080px;
+    margin: auto;
     top: 0px;
+    box-shadow: 3px 15px 22px 10px;
     background-color: wheat;
-    border-bottom: 3px solid black;  
-    z-index: 1;  
+    border-bottom: 3px solid black;
+    z-index: 1;
 }
 
 header ul {
@@ -53,10 +55,11 @@ header a:hover {
 
 .AboutMe {
     position: relative;
-    height: 19%;
+    height: 20%;
     padding: 1em;
     margin: 0;
-    top: 30px;;
+    top: 20px;
+    left: 0px;
     background-color: wheat;
 }
 
@@ -69,18 +72,36 @@ header a:hover {
     font-weight: 700;
 }
 
+.AboutMe pre {
+    position: relative;
+    right: 8em;
+}
+
 .ImageAvatar {
     position: relative;
-    top: 25px;
+    top: 17px;
+    left: 23em;
+    transition: 1s;
     margin: 1em;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.ImageAvatar:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
 }
 
 .CodeExemple {
     position: relative;
     top: -16px;
+    font-size: 1.5em;
     background-color: wheat;
     padding: 1em;
+}
+
+.CodeExemple summary:hover {
+    color: gray;
 }
 
 .Contacts {
@@ -94,6 +115,15 @@ header a:hover {
     margin: 1em;
 }
 
+.Contacts #Contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.Contacts #Contact a:hover {
+    color: gray;
+}
+
 footer {
     position: relative;
     padding: 1em;
@@ -105,7 +135,7 @@ footer img {
     position: relative;
     left: 1em;
     padding: 1px;
-    background-color: chartreuse;
+    background-color: white;
 }
 
 footer a {
