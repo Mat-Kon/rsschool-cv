@@ -1,10 +1,10 @@
 html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    margin: auto;
-    padding: 0;
+    margin: 0;
     height:auto;
     overflow: scroll;
+    background-color: #202020;
 }
 
 body {
@@ -14,24 +14,27 @@ body {
     width: 1080px;
     height: 1200px;
     margin: auto;
-    background: url(/rsschool-cv/img/back-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0%;
     border: 2px solid;
+
 }
 
 header {
     position: sticky;
-    left: 13em;
     height: 40px;
     width: 1080px;
     margin: auto;
     top: 0px;
-    box-shadow: 3px 15px 22px 10px;
-    background-color: wheat;
-    border-bottom: 3px solid black;
-    z-index: 1;
+    box-shadow: 12px 7px 23px 3px;
+    background-color: #800080;
+    z-index: 3;
+}
+
+header ul.Menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: auto;
 }
 
 header ul {
@@ -42,7 +45,6 @@ header ul {
 header li {
     display: inline;
     font-size: 1.5em;
-    padding: 1em;
 }
 header a {
     color: black;
@@ -53,110 +55,113 @@ header a:hover {
     color: gray;
 }
 
-.AboutMe {
+.main {
+    display: flex;
     position: relative;
-    height: 20%;
-    padding: 1em;
-    margin: 0;
-    top: 20px;
-    left: 0px;
-    background-color: wheat;
+    height: 85%;
+    top: 4px;
+    background-color: #AEABAB;
 }
 
-.AboutMe h1 {
-    margin: 10px;
-    text-align: center;
+.main .LeftSaid {
+    margin: 10px 40px;
 }
 
-.AboutMe ol {
-    font-weight: 700;
-}
-
-.AboutMe pre {
+.main .LeftSaid img {
     position: relative;
-    right: 8em;
-}
-
-.ImageAvatar {
-    position: relative;
-    top: 17px;
-    left: 23em;
+    top: 2px;
+    padding: 20px 5px;
     transition: 1s;
-    margin: 1em;
+    background-color: #800080;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
-.ImageAvatar:hover {
+.main .LeftSaid img:hover {
     transform: scale(1.1);
     z-index: 2;
-
 }
 
-.CodeExemple {
-    position: relative;
-    top: -16px;
-    font-size: 1.5em;
-    background-color: wheat;
-    padding: 1em;
+.main .LeftSaid ul {
+    margin: 0;
+    padding: 10px;
 }
 
-.CodeExemple summary:hover {
-    color: gray;
+.main .Contacts {
+    margin: 30px auto;
+    padding: 20px 15px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
-.Contacts {
-    position: relative;
-    top: 0px;
-    background-color: wheat;
+.main .Contacts:hover {
+    transform: scale(1.1);
+    z-index: 2;
 }
 
-.Contacts ul {
-    padding: 1em;
-    margin: 1em;
-}
-
-.Contacts #Contact a {
+.main .Contacts a {
     color: black;
     text-decoration: none;
 }
-
-.Contacts #Contact a:hover {
+.main .Contacts a:hover {
     color: gray;
 }
 
-footer {
+.main .RightSaid {
     position: relative;
-    padding: 1em;
-    top: -17px;
-    background-color: wheat;
+    margin: 10px 30px 0px 0px;
 }
 
-footer img {
+.main .RightSaid p {
     position: relative;
-    left: 1em;
-    padding: 1px;
-    background-color: white;
+    margin: 5px auto;
 }
 
-footer a {
-    position: relative;
-    left: 3em;
-    top: -22px;
-    font-size: 2em;
-    color: black;
-    text-decoration: none;
-    padding: 1em;
+.main .RightSaid h2 {
+    margin: 0px 10px 15px;
 }
 
-footer a:hover {
-    color: gray;
-    background-color: black;
+.main .RightSaid .AboutMe {
+    position: relative;
+    top: 2px;
+    padding: 10px 20px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
-footer section a {
-    font-size: 1em;
+.main .RightSaid .AboutMe:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .RightSaid .MySkill {
     position: relative;
-    left: 0;
-    top: 0;
-    padding: 0;
+    top: 20px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .RightSaid .MySkill:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .RightSaid .MyStrengths {
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .RightSaid .MyStrengths:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .RightSaid ol {
+    padding: 10px 20px;
 }
