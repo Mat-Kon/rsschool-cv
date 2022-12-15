@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <header>  
+    <header >  
         <nav>
             <ul class="Menu">
-              <li><a href="#Menu">Home</a></li>
+              <li><a href="#Main">Home</a></li>
               <li><a href="#About">About me</a></li>
               <li><a href="#Contact">My contacts</a></li>
             </ul>
         </nav>
     </header> 
 
-    <main class="main">
+    <main class="main" id="Main">
         <div class="LeftSaid">
-            <img src="/rsschool-cv/img/foto.jpg" alt="My foto" width="250" height="300"/> 
+            <img src="/rsschool-cv/img/foto.jpg" alt="My foto" width="250" height="330"/> 
 
             <div class="Contacts">
                 <ul>My contacts
@@ -48,41 +48,45 @@
                  </p>
             </div>
 
-            <div class="MySkill">
-                <h2>Skills</h2>
-            </div>
-
             <div class="MyStrengths">
                 <h2>My strengths</h2>
-
                 <ol>
                     <li>Punctuality - I value my own and other people's time.</li>
                     <li>Communication skills - I easily find a common language with people.</li>
-                </ol>    
+                </ol>  
+            </div>
 
+            <div class="Educattion">
+                <h2>Educattion</h2>
+            </div>
+
+            <div class="Work">
+                <h2>Work experience</h2>
+            </div>
+
+            <div class="MySkill">
+                <h2>Skills</h2>
+            </div>           
+
+            <div class="Code">
+                <h2>Code examples</h2>
+                <pre>
+                    function greet () {
+                        let hi = 'Hello World!';
+                        return hi;
+                     }
+                </pre>            
             </div>
         </div>
         
     </main>
 
-    <footer>
-        <div class="CodeExemple">
-            <details>
-                <summary>Code examples</summary>
-                <pre id="Code">
-                 function greet () {
-                    let hi = 'Hello World!';
-                    return hi;
-                 }
-                </pre> 
-            </details>
-        </div>
-
+    <footer class="footer">     
         <div class="LinkData">
             <section itemscope itemtype="http://schema.org/Organization">
                 <h2 itemprop="name">Konstantin Matveev</h2>
                 <p class="My GitHub">Link in GitHub: <span itemprop="url"><a href="https://github.com/Mat-Kon">My GitHub</a> </span> </p>
-                <p><time datetime="2022-12-13">13 декабря 2022г.</time></p>
+                <p><time datetime="2022-12-13">13 december 2022г.</time></p>
             </section>
         </div>
         
