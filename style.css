@@ -7,54 +7,42 @@ html {
     background-color: #202020;
 }
 
-body {
+header {
+    width: 100%;
+    height: 3%;
+    background-color: #800080;
+}
+
+.body {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 50px;
-    right: 50px;
-    width: 1080px;
-    height: 1200px;
+    width: 90%;
+    height: 1920px;
     margin: auto;
     border: 2px solid;
 
 }
 
-header {
-    position: sticky;
-    height: 40px;
-    width: 1080px;
-    margin: auto;
-    top: 0px;
-    box-shadow: 12px 7px 23px 3px;
-    background-color: #800080;
-    z-index: 3;
-}
-
-header ul.Menu {
+.header ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-around;
-    margin: auto;
-}
-
-header ul {
-    margin: 0;
-    display: inline;
-}
-
-header li {
-    display: inline;
     font-size: 1.5em;
-}
-header a {
-    color: black;
-    text-decoration: none;
+    margin: 0.5em;
 }
 
-header a:hover {
-    color: gray;
+.header li {
+    list-style-type: none;
+
+}
+
+.header .Menu a {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.header .Menu a:hover {
+    color: grey;
 }
 
 * {
@@ -66,20 +54,18 @@ details {
 
 }
 
-details[open] {
-    background-color: white;
-}
-
 .main {
     display: flex;
+    justify-content: space-around;
     position: relative;
-    height: 85%;
+    height: 92%;
     top: 4px;
     background-color: #AEABAB;
 }
 
 .main .LeftSaid {
     margin: 10px 40px;
+    width: 28%;
 }
 
 .main .LeftSaid img {
@@ -102,6 +88,7 @@ details[open] {
 }
 
 .main .Contacts {
+    width: 250px;
     margin: 30px auto;
     padding: 20px 15px;
     transition: 1s;
@@ -123,6 +110,10 @@ details[open] {
 }
 
 .main .RightSaid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: relative;
     margin: 10px 30px 0px 0px;
 }
@@ -138,6 +129,7 @@ details[open] {
 
 .main .RightSaid .AboutMe {
     position: relative;
+    width: 80%;
     top: 2px;
     padding: 10px 20px;
     transition: 1s;
@@ -152,6 +144,7 @@ details[open] {
 
 .main .RightSaid .MyStrengths {
     position: relative;
+    width: 80%;
     top: 20px;
     padding: 10px;
     margin: 0px 0px 15px;
@@ -167,6 +160,7 @@ details[open] {
 
 .main .Educattion {
     position: relative;
+    width: 80%;
     top: 20px;
     padding: 10px;
     margin: 0px 0px 15px;
@@ -182,6 +176,7 @@ details[open] {
 
 .main .Work {
     position: relative;
+    width: 80%;
     top: 20px;
     padding: 10px;
     margin: 0px 0px 15px;
@@ -197,7 +192,9 @@ details[open] {
 
 .main .RightSaid .MySkill {
     position: relative;
+    width: 80%;
     top: 20px;
+    margin: 0px 0px 15px;
     transition: 1s;
     background-color: #800080;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
@@ -215,6 +212,7 @@ details[open] {
 
 .main .Code {
     position: relative;
+    width: 80%;
     top: 20px;
     padding: 10px;
     transition: 1s;
@@ -227,6 +225,49 @@ details[open] {
     z-index: 2;
 }
 
-.footer {
+footer {
     display: flex;
+    justify-content: space-around;
+    height: 5%;
+    background-color: #800080;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+.MyGitHub a {
+    color: black;
+}
+
+.MyGitHub a:hover {
+    color: grey;
+}
+
+.RSS {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.RSS img {
+    background-color: white;
+    transition: 1s;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.RSS img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.RSS a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
+
+.RSS a:hover {
+    color: grey;
 }
