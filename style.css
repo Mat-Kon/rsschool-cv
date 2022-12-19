@@ -1,16 +1,273 @@
-html, body {
-    font-family: Arial, serif;
+html {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     margin: 0;
-    padding: 0;
+    height:auto;
+    overflow: scroll;
+    background-color: #202020;
 }
-table {
-    border-collapse: collapse;
+
+header {
+    width: 100%;
+    height: 3%;
+    background-color: #800080;
 }
-table.border td, table.border th {
-    padding: 5px;
-    border: 1px solid #c0c0c0;
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 1920px;
+    margin: auto;
+    border: 2px solid;
+
 }
-table.border th {
-    background: #e0e0e0;
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+.header li {
+    list-style-type: none;
+
+}
+
+.header .Menu a {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.header .Menu a:hover {
+    color: grey;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+details {
+    background-color: #800080;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 92%;
+    top: 4px;
+    background-color: #AEABAB;
+}
+
+.main .LeftSaid {
+    margin: 10px 40px;
+    width: 28%;
+}
+
+.main .LeftSaid img {
+    position: relative;
+    top: 2px;
+    padding: 20px 5px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .LeftSaid img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .LeftSaid ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.main .Contacts {
+    width: 250px;
+    margin: 30px auto;
+    padding: 20px 15px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .Contacts:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .Contacts a {
+    color: black;
+    text-decoration: none;
+}
+.main .Contacts a:hover {
+    color: gray;
+}
+
+.main .RightSaid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin: 10px 30px 0px 0px;
+}
+
+.main .RightSaid p {
+    position: relative;
+    margin: 5px auto;
+}
+
+.main .RightSaid h2 {
+    margin: 0px 10px 15px;
+}
+
+.main .RightSaid .AboutMe {
+    position: relative;
+    width: 80%;
+    top: 2px;
+    padding: 10px 20px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .RightSaid .AboutMe:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .RightSaid .MyStrengths {
+    position: relative;
+    width: 80%;
+    top: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .RightSaid .MyStrengths:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .Educattion {
+    position: relative;
+    width: 80%;
+    top: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .Educattion:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .Work {
+    position: relative;
+    width: 80%;
+    top: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .Work:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.main .RightSaid .MySkill {
+    position: relative;
+    width: 80%;
+    top: 20px;
+    margin: 0px 0px 15px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .RightSaid .MySkill:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.main .RightSaid ol {
+    padding: 10px 20px;
+}
+
+.main .Code {
+    position: relative;
+    width: 80%;
+    top: 20px;
+    padding: 10px;
+    transition: 1s;
+    background-color: #800080;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.main .Code:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 5%;
+    background-color: #800080;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+.MyGitHub a {
+    color: black;
+}
+
+.MyGitHub a:hover {
+    color: grey;
+}
+
+.RSS {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.RSS img {
+    background-color: white;
+    transition: 1s;
+    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+}
+
+.RSS img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.RSS a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
+
+.RSS a:hover {
+    color: grey;
 }
