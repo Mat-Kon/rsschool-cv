@@ -20,7 +20,6 @@ header {
     height: 1920px;
     margin: auto;
     border: 2px solid;
-
 }
 
 .header ul {
@@ -194,6 +193,7 @@ details {
     position: relative;
     width: 80%;
     top: 20px;
+    padding: 10px;
     margin: 0px 0px 15px;
     transition: 1s;
     background-color: #800080;
@@ -270,4 +270,34 @@ footer h2 {
 
 .RSS a:hover {
     color: grey;
+}
+
+@media (max-width: 860px) {
+    body {
+        margin: 0;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .LeftSaid {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .RightSaid {
+        order: 2;
+    }
+
 }
