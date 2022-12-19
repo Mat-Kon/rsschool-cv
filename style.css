@@ -119,53 +119,34 @@ details {
 
 .main .RightSaid p {
     position: relative;
-    margin: 5px auto;
+    margin: 5px 10px;
 }
 
 .main .RightSaid h2 {
     margin: 0px 10px 15px;
 }
 
-.main .RightSaid .AboutMe {
+.main .RightSaid #decoration {
     position: relative;
     width: 80%;
-    top: 2px;
-    padding: 10px 20px;
+    top: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px;
     transition: 1s;
     background-color: #800080;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
+
 
 .main .RightSaid .AboutMe:hover {
     transform: scale(1.1);
     z-index: 2;
 }
 
-.main .RightSaid .MyStrengths {
-    position: relative;
-    width: 80%;
-    top: 20px;
-    padding: 10px;
-    margin: 0px 0px 15px;
-    transition: 1s;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
-}
 
 .main .RightSaid .MyStrengths:hover {
     transform: scale(1.1);
     z-index: 2;
-}
-
-.main .Educattion {
-    position: relative;
-    width: 80%;
-    top: 20px;
-    padding: 10px;
-    margin: 0px 0px 15px;
-    transition: 1s;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
 .main .Educattion:hover {
@@ -174,30 +155,12 @@ details {
 }
 
 .main .Work {
-    position: relative;
-    width: 80%;
-    top: 20px;
-    padding: 10px;
-    margin: 0px 0px 15px;
     transition: 1s;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
 .main .Work:hover {
     transform: scale(1.1);
     z-index: 2;
-}
-
-.main .RightSaid .MySkill {
-    position: relative;
-    width: 80%;
-    top: 20px;
-    padding: 10px;
-    margin: 0px 0px 15px;
-    transition: 1s;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
 .main .RightSaid .MySkill:hover {
@@ -208,16 +171,6 @@ details {
 
 .main .RightSaid ol {
     padding: 10px 20px;
-}
-
-.main .Code {
-    position: relative;
-    width: 80%;
-    top: 20px;
-    padding: 10px;
-    transition: 1s;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
 .main .Code:hover {
