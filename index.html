@@ -9,113 +9,488 @@
 </head>
 
 <body>
-    <div class="body">
-        <header >
-            <div class="header">
-                <nav>
-                    <ul class="Menu">
-                      <li><a href="#Main">Home</a></li>
-                      <li><a href="#About">About me</a></li>
-                      <li><a href="#Contact">My contacts</a></li>
-                    </ul>
-                </nav>
-            </div>              
-        </header> 
-    
-        <main class="main" id="Main">
-            <div class="LeftSaid">
-                <img src="/rsschool-cv/img/foto.jpg" alt="My foto" width="250" height="330"/> 
-    
-                <div class="Contacts">
-                    <ul>My contacts
-                        <li>GitHub: Mat-Kon</li>
-                        <li>Discord: Konstantin(@Mat-Kon)</li>
-                        <li id="Contact">Mail:
-                            <a href="mailto:mat_kon@mail.ru">mat_kon@mail.ru</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="RightSaid">
-                <div class="AboutMe" id="decoration">
-                    <h2>About me</h2>
-                     <p>
-                        I am so positive and fun. I like the work in which you can see the result.
-                        My first job I found when I was 14 years old, on school holiday. 
-                        I graduated from college at 19 years, and graduated university at 21.
-                        Until I was 30 years old, I worked as a builder.
-    
-                        I want to travel more so I decided to change my profession at the age of 30. 
-                        I like play guitar and listen music in free time.                    
-                     </p>
-                </div>
-    
-                <div class="MyStrengths" id="decoration">
-                    <h2>My strengths</h2>
-                    <ol>
-                        <li>Punctuality - I value my own and other people's time.</li>
-                        <li>Communication skills - I easily find a common language with people.</li>
-                    </ol>  
-                </div>
-    
-                <div class="Educattion" id="decoration">
-                    <h2>Educattion</h2>
-
-                    <lu>
-                        <li>2008-2012
-                            College of East Ukrainian National University V. Dahl
-                        </li>
-                        <li>2012-2014
-                            East Ukrainian National University of V. Dahl
-                        </li>
-                    </lu>
-                </div>
-    
-                <div class="Work" id="decoration">
-                    <h2>Work experience</h2>
-                    <p>No have</p>
-                </div>
-    
-                <div class="MySkill" id="decoration">
-                    <h2>Skills</h2>
-                    <p>No have</p>
-                </div>           
-    
-                <div class="Code" id="decoration">
-                    <h2>Code examples</h2>
-                    <pre>
-        Function greet () {
-            let hi = 'Hello World!';
-                return hi;
-        }
-                    </pre>            
-                </div>
-            </div>            
-        </main>   
-        
-        <footer>     
-            <div class="LinkData">
-                <section itemscope itemtype="http://schema.org/Organization">
-                    <p class="MyGitHub">Link in GitHub: 
-                        <span itemprop="url">
-                            <a href="https://github.com/Mat-Kon">My GitHub</a>
-                        </span>
-                    </p>
-                    <p>
-                        <time datetime="2022-12-13">13 december 2022г.</time>
-                    </p>
-                </section>
-            </div>
-            
-    
-            <div class="RSS">
-                <img src="/rsschool-cv/img/rs_logo.svg" alt="LogoRS" width="100" height="60">
-                <a href="https://rs.school/js/">RSSchool</a>
-            </div>
-        </footer>
+    <div class="header">
+        <nav>
+            <ul class="menu">
+              <li><a href="#main">Home</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#contact">My contacts</a></li>
+            </ul>
+        </nav>
     </div>
-   
+    
+    <main class="main" id="main">
+        <div class="left-said">
+            <img src="/rsschool-cv/img/foto.jpg" alt="My photo" width="250" height="330"/> 
+
+            <div class="contacts">
+                <ul>My contacts
+                    <li>GitHub: Mat-Kon</li>
+                    <li>Discord: Konstantin(@Mat-Kon)</li>
+                    <li id="contact">Mail:
+                        <a href="mailto:mat_kon@mail.ru">mat_kon@mail.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-said">
+            <div class="about-me decoration">
+                <h2>About me</h2>
+                 <p>
+                    I am so positive and fun. I like the work in which you can see the result.
+                    My first job I found when I was 14 years old, on school holiday. 
+                    I graduated from college at 19 years, and graduated university at 21.
+                    Until I was 30 years old, I worked as a builder.
+
+                    I want to travel more so I decided to change my profession at the age of 30. 
+                    I like play guitar and listen music in free time.                    
+                 </p>
+            </div>
+
+            <div class="my-strengths decoration">
+                <h2>My strengths</h2>
+                <ol>
+                    <li>Punctuality - I value my own and other people's time.</li>
+                    <li>Communication skills - I easily find a common language with people.</li>
+                </ol>  
+            </div>
+
+            <div class="educattion decoration">
+                <h2>Educattion</h2>
+
+                <lu>
+                    <li>2008-2012
+                        College of East Ukrainian National University V. Dahl
+                    </li>
+                    <li>2012-2014
+                        East Ukrainian National University of V. Dahl
+                    </li>
+                </lu>
+            </div>
+
+            <div class="work decoration">
+                <h2>Work experience</h2>
+                <p>No have</p>
+            </div>
+
+            <div class="my-skill decoration">
+                <h2>Skills</h2>
+                <p>No have</p>
+            </div>           
+
+            <div class="code decoration">
+                <h2 class="code-button">Code examples</h2>
+                <pre>
+<div class="my-code">
+    <h3>Widget momentum JS code</h3>
+    window.onload = function() {
+    
+        getTimeOfDay(showHours());
+        showTime();
+        showDuration();
+    }
+    import playList from './playList.js';
+    //Add time
+    const time = document.querySelector('.time');
+    
+    const showTime = () => {
+        const date = new Date();
+        const currentTime = date.toLocaleTimeString();
+        
+        time.textContent = currentTime;
+        showDate();
+        getTimeOfDay(showHours());
+        setTimeout(showTime, 1000);
+    }
+    
+    //Add date
+    const dateToDay = document.querySelector('.date');
+    dateToDay.textContent = '';
+    
+    const showDate = () => {
+        const date = new Date();
+        const options = {weekday: 'long', day: 'numeric', month: 'long'};
+        const currentDate = date.toLocaleDateString('en-US', options);
+        dateToDay.textContent = currentDate;
+    }
     
     
+    //Add greeting
+    const greeting = document.querySelector('.greeting');
+    greeting.textContent = '';
+    
+    const showHours = () => {
+        const date = new Date();
+        const hours = date.getHours();
+        setTimeout(showHours, 1000);
+        return hours
+    }
+    
+    const getTimeOfDay = (hours) => {
+        if (6 <= hours && hours < 12) {
+            return 'morning'
+        } 
+        if (12 <= hours && hours < 18) {
+            return 'afternoon'
+        }
+        if (18 <= hours && hours < 24) {
+            return 'evening'
+        }
+        if (0 <= hours && hours < 6) {
+            return 'night'
+        }
+    }
+    greeting.textContent = `Good ${getTimeOfDay(showHours())}`;
+    
+    //add LocalStorage
+    const setLocalStorage = () => {
+        const name = document.querySelector('.name');
+        localStorage.setItem('name', name.value);
+        const cityName = document.querySelector('.city');
+        localStorage.setItem('city', cityName.value);
+      }
+    window.addEventListener('beforeunload', setLocalStorage)
+    
+    function getLocalStorage() {
+        const name = document.querySelector('.name')
+        if (localStorage.getItem('name')) {
+          name.value = localStorage.getItem('name');
+        }
+        const cityName = document.querySelector('.city')
+        if (localStorage.getItem('city')) {
+          cityName.value = localStorage.getItem('city');
+        }
+    }
+    window.addEventListener('load', getLocalStorage)
+    
+    //background change
+    const body = document.querySelector('body');
+    const getRandomNum = (num) => {
+        let number = Math.floor(Math.random() * num + 1);
+        return number
+    }
+    let bgNum = getRandomNum(20);
+    
+    let timeOfDay = getTimeOfDay(showHours());
+    
+    const getBg = (timeOfDay, num) => {
+        num = String(num);
+        num = num.padStart(2, '0');
+        
+        switch (timeOfDay) {
+            case 'morning': 
+                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/morning/${num}.jpg?raw=true`;
+            case 'afternoon':
+                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/afternoon/${num}.jpg?raw=true`;
+            case 'evening':
+                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/evening/${num}.jpg?raw=true`;
+            case 'night':
+                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/night/${num}.jpg?raw=true`; 
+        }    
+    }
+    
+    const setBg = (timeOfDay, num) => {
+        const img = new Image();
+        img.src = getBg(timeOfDay,num);
+        img.onload = () => {      
+        body.style.backgroundImage = `url(${img.src})`;
+      }; 
+    }
+    setBg(timeOfDay, bgNum);
+    
+    //Functions for slide image
+    const setSlideNext = () => {
+        bgNum = bgNum + 1;
+        if (bgNum > 20) {
+           bgNum = 1;
+        }
+        setBg(timeOfDay,bgNum);
+    }
+    
+    const setSlidePrev = () => {
+        bgNum = bgNum - 1;
+        if (bgNum < 1) {
+           bgNum = 20;
+        }
+        setBg(timeOfDay,bgNum);
+    }
+    
+    const slideNext = document.querySelector('.button-right');
+    slideNext.addEventListener('click', event => {
+            setSlideNext();
+    });
+    
+    const slidePrev = document.querySelector('.button-left');
+    slidePrev.addEventListener('click', event => {
+            setSlidePrev();
+    });
+    
+    // add weather widget 
+    const weatherIcon = document.querySelector('.weather-icon');
+    const temperature = document.querySelector('.temperature');
+    const weatherDescription = document.querySelector('.weather-description');
+    const clouds = document.querySelector('.clouds');
+    const windSpeed = document.querySelector('.wind');
+    const humidity = document.querySelector('.humidity');
+    const cityName = document.querySelector('.city');
+    
+    async function getWeather(city) {  
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&appid=0380bab79ebe14975ff3341abbe0c56c&units=metric`;
+        const res = await fetch(url);
+        const data = await res.json();
+    
+        if (city === undefined || data.cod === '404') {
+            errorWeather();
+        }
+    
+        weatherIcon.className = 'weather-icon owf';
+        weatherIcon.classList.add(`owf-${data.weather[0].id}`);
+        temperature.textContent = `${Math.floor(data.main.temp)}°C`;
+        weatherDescription.textContent = data.weather[0].description;
+        clouds.textContent = `Clouds: ${data.clouds.all}%`;
+        windSpeed.textContent = `Wind speed: ${Math.floor(data.wind.speed)}m/s`;
+        humidity.textContent = `Humidity: ${data.main.humidity}%`;
+    }
+    const errorWeather = () => {
+        cityName.placeholder = '[Enter City]';
+        temperature.textContent = 'Error! Nothing to geocode for!';
+        weatherDescription.textContent = '';
+        clouds.textContent = '';
+        windSpeed.textContent = '';
+        humidity.textContent = '';
+        weatherIcon.classList.add('active');
+    }
+    getWeather(cityName.placeholder);
+    
+    cityName.addEventListener('change', (event) => {
+    
+        if (event.target.value === ''){
+            getWeather()
+            // errorWeather();
+        }
+        getWeather(event.target.value);
+        
+    })
+    
+    //Quote widget
+    const quote = document.querySelector('.quote');
+    const author = document.querySelector('.author');
+        
+    async function getQuotes(num) {  
+        const quotes = 'src/data.json';
+        const res = await fetch(quotes);
+        const data = await res.json();
+    
+        quote.textContent = data[num].text;
+        author.textContent = data[num].author;
+    }
+    
+    getQuotes(getRandomNum(4));
+    
+    const changeQuote = document.querySelector('.update-button');
+    changeQuote.addEventListener('click', event => {
+        getQuotes(getRandomNum(4))
+    });
+    
+    //Audio widget
+    const audioName = document.querySelector('.audio-name');
+    const playStopAudio = document.querySelector('.play-stop-audio');
+    const timeAudio = document.querySelector('.time-music .end-music');
+    const audio = new Audio();
+    timeAudio.textContent = '0:00';
+    let playNum = 0;
+    audioName.textContent = playList[playNum].title;
+    
+    const playListContainer = document.querySelector('.playlist');
+    const addAudioName = (num) => {
+        const li = document.createElement('li');
+        li.classList.add('play-item');
+        li.length = playList.length;
+        li.textContent = playList[num].title;    
+        playListContainer.append(li);
+        playListContainer.append()
+    }
+    const addButtonsPlayStopForPlaylist = (num) => {
+        const button = document.createElement('button');
+        button.classList.add('play-stop-track');
+        playListContainer.append(button);
+    }
+    for (let i = 0; i < playList.length; i++) {
+        addButtonsPlayStopForPlaylist(i);
+        addAudioName(i); 
+    }
+    
+    
+    const showDuration = () => {
+        audio.addEventListener("loadeddata", event => {
+            timeAudio.textContent = getTimeCodeFromNum(audio.duration);
+        });
+    }
+    
+    function getTimeCodeFromNum(num) {
+        let seconds = parseInt(num);
+        let minutes = parseInt(seconds / 60);
+        seconds -= minutes * 60;
+        const hours = parseInt(minutes / 60);
+        minutes -= hours * 60;
+      
+        if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+        return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+          seconds % 60
+        ).padStart(2, 0)}`;
+      }
+    
+    
+    const addIndicatesWhatIsPlay = () => {
+        const nameAudio = document.querySelectorAll('.play-item');
+        nameAudio[playNum].classList.add('active');
+        const iconAudio = document.querySelectorAll('.play-stop-track');
+        iconAudio[playNum].classList.add('active');
+    }
+    const removeIndicatesWhatIsPlay = () => {
+        const nameAudio = document.querySelectorAll('.play-item');
+        const iconAudio = document.querySelectorAll('.play-stop-track');
+        nameAudio.forEach(element => {
+            element.classList.remove('active');
+        })
+        iconAudio.forEach(element => {
+            element.classList.remove('active');
+        })
+    }
+    
+    const playAudio = () => {
+            audio.src = playList[playNum].src;
+            audioName.textContent = playList[playNum].title;
+            audio.currentTime = 0;
+            audio.play();
+    }
+    const stopAudio = () => {
+        audio.pause();
+    }
+    /*music auto-switch*/
+    audio.addEventListener('ended',event => {
+        removeIndicatesWhatIsPlay();
+        playNext();
+        audioName.textContent = playList[playNum].title;
+    });
+    
+    /*Change icon play/stop */
+    const changeIconInPlayer = () => {
+        playStopAudio.classList.toggle('active');
+    }
+    /*Change icon to play => stop */
+    const setPauseIcon = () => {
+        playStopAudio.classList.add('active');
+    }
+    
+    /*Play/Stop music with one button*/
+    playStopAudio.addEventListener('click', (event) => {
+        changeIconInPlayer();
+    
+        if (event.target.className === 'btn-audio play-stop-audio active') {
+            addIndicatesWhatIsPlay();
+            playAudio(playNum);
+            setInterval(() => {
+                const progressBar = document.querySelector(".progress");
+                progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+                document.querySelector('.start-music').textContent = getTimeCodeFromNum(audio.currentTime);
+            }, 500);
+        }
+        if (event.target.className === 'btn-audio play-stop-audio') {
+            stopAudio();
+            removeIndicatesWhatIsPlay();
+            timeAudio.textContent = '0:00';
+        }
+    });
+    /*Play/stop music with button track*/
+    document.querySelector('.play-stop-track').addEventListener('click', (event) => {
+    
+    })
+    
+    /*change time music to timeline */
+    const timeline = document.querySelector('.timeline');
+    timeline.addEventListener('click', event => {
+        const time = window.getComputedStyle(timeline).width;
+        const timeToSeek = event.offsetX / parseInt(time) * audio.duration;
+        audio.currentTime = timeToSeek;
+    })
+    /*Music switching*/
+    const nextMusic = document.querySelector('.next-audio');
+    const prevMusic = document.querySelector('.prev-audio');
+    
+    const playNext = () => {
+        if (playNum < 0) {
+            playNum = -1;
+        }
+        playNum = playNum + 1;
+        if (playNum >= playList.length) {
+            playNum = 0;
+            audio.src = playList[playNum].src;
+            audio.currentTime = 0;
+        }
+        audio.src = playList[playNum].src;
+        audio.currentTime = 0;  
+        audio.play();
+        addIndicatesWhatIsPlay();
+    }
+    
+    const playPrev = () => {
+        playNum = playNum - 1;
+        if (playNum < 0) {
+            playNum = playList.length - 1;
+            audio.src = playList[playNum].src;
+            audio.currentTime = 0;
+        }
+        if (playNum === 0) {
+            audio.src = playList[playNum].src;
+            audio.currentTime = 0;
+        }
+        if (playNum > 0) {
+            audio.src = playList[playNum].src;
+            audio.currentTime = 0;
+        }
+        audio.play();    
+        addIndicatesWhatIsPlay();
+    }
+    
+    nextMusic.addEventListener('click', event => {
+        removeIndicatesWhatIsPlay();
+        setPauseIcon();
+        playNext();
+        audioName.textContent = playList[playNum].title;
+    });
+    prevMusic.addEventListener('click', event => {
+        removeIndicatesWhatIsPlay();
+        playPrev();
+        setPauseIcon();
+        audioName.textContent = playList[playNum].title;
+    });                        
+</div>   
+                </pre>            
+            </div>
+        </div>            
+    </main>   
+    
+    <footer>     
+        <div class="link-data">
+            <section itemscope itemtype="http://schema.org/Organization">
+                <p class="my-github">Link in GitHub: 
+                    <span itemprop="url">
+                        <a href="https://github.com/Mat-Kon">My GitHub</a>
+                    </span>
+                </p>
+                <p>
+                    <time datetime="2022-12-13">13 december 2022г.</time>
+                </p>
+            </section>
+        </div>
+        
+
+        <div class="rss">
+            <img src="/rsschool-cv/img/rs_logo.svg" alt="LogoRS" width="100" height="60">
+            <a href="https://rs.school/js/">RSSchool</a>
+        </div>
+    </footer>
+    <script src="../rsschool-cv/index.js"></script>
 </body>

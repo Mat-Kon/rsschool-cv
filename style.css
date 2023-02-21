@@ -7,7 +7,7 @@ html {
     background-color: #202020;
 }
 
-header {
+.header {
     width: 100%;
     height: 3%;
     background-color: #800080;
@@ -34,13 +34,13 @@ header {
 
 }
 
-.header .Menu a {
+.header .menu a {
     font-size: 1em;
     text-decoration: none;
     color: black;
 }
 
-.header .Menu a:hover {
+.header .menu a:hover {
     color: grey;
 }
 
@@ -55,127 +55,96 @@ details {
 
 .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
     height: 92%;
     top: 4px;
     background-color: #AEABAB;
 }
 
-.main .LeftSaid {
-    margin: 10px 40px;
-    width: 28%;
+.left-said {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
 }
 
-.main .LeftSaid img {
+.left-said img {
     position: relative;
     top: 2px;
     padding: 20px 5px;
-    transition: 1s;
     background-color: #800080;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+    margin: 0px 0px 15px;
 }
 
-.main .LeftSaid img:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.main .LeftSaid ul {
+.left-said ul {
     margin: 0;
     padding: 10px;
 }
 
-.main .Contacts {
+.contacts {
     width: 250px;
-    margin: 30px auto;
     padding: 20px 15px;
-    transition: 1s;
     background-color: #800080;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
-.main .Contacts:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.main .Contacts a {
+.contacts a {
     color: black;
     text-decoration: none;
 }
-.main .Contacts a:hover {
+.contacts a:hover {
     color: gray;
 }
 
-.main .RightSaid {
+.right-said {
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    margin: 10px 30px 0px 0px;
+}
+.my-code {
+    display: none;
+}
+.code-button:hover {
+    color: gray;
+    cursor: pointer;
+}
+.my-code.active {
+    display: block;
+    font-size: 10px;
+    background-color: #AEABAB;
+    border:2px solid #202020;
+}
+.my-code h3 {
+    margin: -5px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    border-bottom: 2px solid;
 }
 
-.main .RightSaid p {
+.right-said p {
     position: relative;
     margin: 5px 10px;
 }
 
-.main .RightSaid h2 {
+.right-said h2 {
     margin: 0px 10px 15px;
 }
 
-.main .RightSaid #decoration {
-    position: relative;
-    width: 80%;
-    top: 20px;
+.decoration {
+    width: 100%;
     padding: 10px;
     margin: 0px 0px 15px;
-    transition: 1s;
     background-color: #800080;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
-
-.main .RightSaid .AboutMe:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-
-.main .RightSaid .MyStrengths:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.main .Educattion:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.main .Work {
-    transition: 1s;
-}
-
-.main .Work:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.main .RightSaid .MySkill:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-
-.main .RightSaid ol {
+.main .right-said ol {
     padding: 10px 20px;
-}
-
-.main .Code:hover {
-    transform: scale(1.1);
-    z-index: 2;
 }
 
 footer {
@@ -189,39 +158,33 @@ footer h2 {
     margin: 0;
 }
 
-.MyGitHub a {
+.my-github a {
     color: black;
 }
 
-.MyGitHub a:hover {
+.my-github a:hover {
     color: grey;
 }
 
-.RSS {
+.rss {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 25%;
 }
 
-.RSS img {
+.rss img {
     background-color: white;
-    transition: 1s;
     box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
 }
 
-.RSS img:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.RSS a {
+.rss a {
     font-size: 2em;
     color: black;
     text-decoration: none;
 }
 
-.RSS a:hover {
+.rss a:hover {
     color: grey;
 }
 
@@ -243,13 +206,13 @@ footer h2 {
         justify-content: flex-start;
     }
 
-    .LeftSaid {
+    .left-said {
         display: flex;
         flex-direction: column;
         order: 1;
     }
 
-    .RightSaid {
+    .right-said {
         order: 2;
     }
 
