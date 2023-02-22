@@ -88,8 +88,12 @@ body {
 .my-code {
     display: none;
 }
+.my-code h3{
+    text-align: center;
+}
 .my-code.active {
     display: block;
+    font-size: 10px;
 }
 .decoration {
     width: 80%;
@@ -118,4 +122,8 @@ footer a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and (max-width: 380px){
+    
 }
