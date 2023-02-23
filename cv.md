@@ -5,7 +5,7 @@
 - **GitHub**: Mat-Kon
 - **Discord**: Mat-Kon#4526
 - **Mail**: mat_kon@mail.ru
-- **[My Linkedin](https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%BC%D0%B0%D1%82%D0%B2%D0%B5%D0%B5%D0%B2-539b32264/)**
+- [My Linkedin](https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%BC%D0%B0%D1%82%D0%B2%D0%B5%D0%B5%D0%B2-539b32264/)
 ---
 ## **About me**
 
