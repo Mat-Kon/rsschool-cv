@@ -1,6 +1,5 @@
 # Konstantin Matveev
 **********************
-![Foto](/rsschool-cv/img/IMG_20210509_190252.jpg)
 
 **My contacts**\
 * GitHub NikeName: Mat-Kon\
