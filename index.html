@@ -12,15 +12,22 @@
 </head>
 
 <body>
-    <div class="header">
-        <nav class="menu">
-            <ul>
-              <li><a href=".\">Home</a></li>
-              <li><a href="#about">About me</a></li>
-              <li><a href="#code">My code</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header class="header">
+        <div class="menu">
+            <nav class="navbar">
+                <ul>
+                    <li><a href=".\">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#code">My code</a></li>
+                  </ul>
+                </nav>
+            <div class="burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
     
     <main class="main" id="main">
         <div class="left-said">
@@ -226,13 +233,17 @@
         
         switch (timeOfDay) {
             case 'morning': 
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/morning/${num}.jpg?raw=true`;
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/morning/${num}.jpg?raw=true`;
             case 'afternoon':
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/afternoon/${num}.jpg?raw=true`;
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/afternoon/${num}.jpg?raw=true`;
             case 'evening':
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/evening/${num}.jpg?raw=true`;
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/evening/${num}.jpg?raw=true`;
             case 'night':
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/night/${num}.jpg?raw=true`; 
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/night/${num}.jpg?raw=true`; 
         }    
     }
     
@@ -282,7 +293,8 @@
     const cityName = document.querySelector('.city');
     
     async function getWeather(city) {  
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&appid=0380bab79ebe14975ff3341abbe0c56c&units=metric`;
+        let url = `https://api.openweathermap.org/data/
+        2.5/weather?q=${city}&lang=en&appid=0380bab79ebe14975ff3341abbe0c56c&units=metric`;
         const res = await fetch(url);
         const data = await res.json();
     
