@@ -4,216 +4,305 @@ html {
     margin: 0;
     height:auto;
     overflow: scroll;
-    background-color: #202020;
+    background-color: rgb(189, 189, 189);
+}
+body {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgb(40, 40, 40);
+}
+body a {
+    transition: 0.5s;
 }
 
 .header {
-    width: 100%;
-    height: 3%;
-    background-color: #800080;
+    position: sticky;
+    top: 0px;
+    margin: 0px 0px 40px;
+    height: 15%;
+    background-color: rgb(189, 189, 189);
 }
-
-.body {
+.menu ul{
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 1920px;
-    margin: auto;
-    border: 2px solid;
-}
-
-.header ul {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5em;
-    margin: 0.5em;
-}
-
-.header li {
+    justify-content: space-evenly;
     list-style-type: none;
-
 }
-
-.header .menu a {
-    font-size: 1em;
+.menu a{
+    color: #fff;
     text-decoration: none;
-    color: black;
-}
-
-.header .menu a:hover {
-    color: grey;
-}
-
-* {
-    box-sizing: border-box; 
-}
-
-details {
-    background-color: #800080;
-
+    font-size: 20px;
+    border: 0px solid;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.5s;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0px 4px 10px black;
+} 
+.menu a:hover {
+    color: #000;
+    background-color: rgb(189, 189, 189);
 }
 
 .main {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    height: 92%;
-    top: 4px;
-    background-color: #AEABAB;
+    justify-content: space-around;
 }
 
 .left-said {
+    height: max-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 20%;
 }
-
 .left-said img {
-    position: relative;
-    top: 2px;
-    padding: 20px 5px;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
-    margin: 0px 0px 15px;
+    width: 100%;
 }
-
-.left-said ul {
-    margin: 0;
-    padding: 10px;
-}
-
-.contacts {
+.my-photo {
     width: 250px;
-    padding: 20px 15px;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
-}
+    height: 330px;
+    background-image: url(./img/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
 
-.contacts a {
-    color: black;
+}
+.contacts {
+    margin: 20px 0px 0px;
+    background-color:rgb(189, 189, 189);
+    box-shadow: 0px 0px 30px -9px white;
+    border-radius: 15px;
+}
+.contacts ul {
+    font-size: 30px;
+}
+.contacts li {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+.contacts a{
+    color: #000;
     text-decoration: none;
+    font-size: 20px;
 }
 .contacts a:hover {
-    color: gray;
-}
+    color: #fff;
+    cursor: pointer;
 
+}
 .right-said {
-    width: 55%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
+    background-color: rgb(189, 189, 189);
+}
+.strengths {
+    font-size: 20px;
+}
+.name-job {
+    width: 57em;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: -15px 10px 9px -5px black;
+    border-radius: 15px 0px 0px 15px;
+}
+.courses p{
+    font-size: 20px;
+}
+.name-project {
+    font-size: 20px;
+}
+.project li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.plants, .momentum {
+    width: 200px;
+    height: 240px;
+    margin: 10px;
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    border: 2px solid rgb(40, 40, 40);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px #fff;
+}
+.work a {
+    padding: 3px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.work a:hover {
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    border-radius: 10px;
+}
+.code-button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s;
+    
 }
 .my-code {
     display: none;
 }
-.code-button:hover {
-    color: gray;
-    cursor: pointer;
+.my-code h3{
+    text-align: center;
 }
 .my-code.active {
     display: block;
     font-size: 10px;
-    background-color: #AEABAB;
-    border:2px solid #202020;
 }
-.my-code h3 {
-    margin: -5px 0px;
-    padding: 5px 0px;
-    text-align: center;
-    border-bottom: 2px solid;
-}
-
-.right-said p {
-    position: relative;
-    margin: 5px 10px;
-}
-
-.right-said h2 {
-    margin: 0px 10px 15px;
-}
-
 .decoration {
-    width: 100%;
-    padding: 10px;
-    margin: 0px 0px 15px;
-    background-color: #800080;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
+    width: 80%;
 }
-
-.main .right-said ol {
-    padding: 10px 20px;
-}
-
 footer {
     display: flex;
     justify-content: space-around;
-    height: 5%;
-    background-color: #800080;
+    margin: 15px 0px 15px;
+    background-color: rgb(189, 189, 189);
+    box-shadow: 0px 0px 30px -9px white;
+    border-radius: 10px;
 }
-
-footer h2 {
-    margin: 0;
-}
-
-.my-github a {
-    color: black;
-}
-
-.my-github a:hover {
-    color: grey;
-}
-
-.rss {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 25%;
-}
-
-.rss img {
-    background-color: white;
-    box-shadow: 5px 5px 7px 5px rgb(0 0 0 / 50%);
-}
-
-.rss a {
-    font-size: 2em;
-    color: black;
+footer a{
+    color: #000;
     text-decoration: none;
+    font-size: 20px;
+}
+footer a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.rss {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.rss a:hover {
-    color: grey;
-}
-
-@media (max-width: 860px) {
+@media (max-width: 380px){
     body {
-        margin: 0;
+        width: 100%;
+        margin: 0px;
     }
-
-    .body {
+    .header {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 55px;
+        position: relative;
+        width: 100%;
+    }
+    /*Hamburger menu*/
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(189, 189, 189);
+        transform: translateX(-100%);
+        transition: transform 1s; 
+    }
+    .navbar.active {
+        transform: translateX(0);
+        margin: 15px 0px 0px;
+    }
+    .navbar ul {
         flex-direction: column;
         width: 100%;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar li {
+        margin: 50px auto 0px;
+    }
+    .navbar.active ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar.active li {
+        margin: 50px auto 0px;
+    }
+    .burger-button {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 30px;
+        margin: 0px 20px;
+    }
+    .burger-button span {
+        margin: 3px;
+        height: 3px;
+        background-color: black;
+    }
+    .burger-button.active span:nth-of-type(1) {
+        display: none;
     }
 
+    .burger-button.active span:nth-of-type(2) {
+        position: absolute;
+        width: 10%;
+        top: 20px;
+        right: 0px;
+        transform: translate(-50%, 0%) rotate(45deg);  
+    }
+
+    .burger-button.active span:nth-of-type(3) {
+        position: absolute;
+        width: 10%;
+        top: 20px;
+        right: 0px;
+        transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    .menu ul {
+        padding: 0px;
+    }
     .main {
-        display: flex;
+        width: 100%;
         flex-direction: column;
-        justify-content: flex-start;
     }
-
     .left-said {
-        display: flex;
-        flex-direction: column;
-        order: 1;
+        align-items: center;
     }
-
+    .contacts {
+        width: 90%;
+    }
     .right-said {
-        order: 2;
+        width: 100%;
+        margin: 15px 0px 0px;
     }
-
+    .name-job {
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px 0px black;
+    }
+    .work-container {
+        justify-content: center;
+    }
+    .decoration h2{
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+    }
+    .rss {
+        width: 90%;
+    }
 }

@@ -12,26 +12,35 @@
 </head>
 
 <body>
-    <div class="header">
-        <nav class="menu">
-            <ul>
-              <li><a href="#main">Home</a></li>
-              <li><a href="#about">About me</a></li>
-              <li><a href="#contact">My contacts</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header class="header">
+        <div class="menu">
+            <nav class="navbar">
+                <ul>
+                    <li><a href=".\">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#code">My code</a></li>
+                  </ul>
+                </nav>
+            <div class="burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
     
     <main class="main" id="main">
         <div class="left-said">
-            <img src="/rsschool-cv/img/foto.jpg" alt="My photo" width="250" height="330"/> 
-
+            <div class="my-photo"></div>
             <div class="contacts">
                 <ul>My contacts
                     <li>GitHub: Mat-Kon</li>
                     <li>Discord: Mat-Kon#4526</li>
                     <li id="contact">Mail:
                         <a href="mailto:mat_kon@mail.ru">mat_kon@mail.ru</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%BC%D0%B0%D1%82%D0%B2%D0%B5%D0%B5%D0%B2-539b32264/">Linkedin</a>
                     </li>
                 </ul>
             </div>
@@ -43,53 +52,88 @@
                 <h2>Junior Software Enginee</h2>
             </div>
             
-            <div class="about-me decoration">
+            <div class="about-me decoration" id="about">
                 <h2>About me</h2>
                  <p>
                     Hello! I am 30 years old. Graduated from college in 2008, university in 2012. My specialty is an engineer electrician. 
                     In 2022, I started learn of Software Engineer. I chose this profession because I like to see the result of my work. 
                     This job gives me a chance work from anywhere and always learn something new.                  
                  </p>
-                 <ol>My strengths:
+                 <span class="strengths">My strengths:</span>
+                 <ol>
                     <li>Punctuality - I value my own and other people’s time.</li>
                     <li>Communication skills - I easily find a common language with people.</li>
                     <li>Responsible - I can answers for my work.  </li>
                 </0l>  
             </div>
 
-            <div class="my-strengths decoration">
-                <h2>My strengths</h2>
-                <ol>
-                    <li>Punctuality - I value my own and other people's time.</li>
-                    <li>Communication skills - I easily find a common language with people.</li>
-                </ol>  
+            <div class="english decoration">
+                <h2>English skill</h2>
+                <p>(A2) I every day learn english with Duolingo</p>
             </div>
-
             <div class="educattion decoration">
                 <h2>Educattion</h2>
 
-                <lu>
+                <ul>
                     <li>2008-2012
                         College of East Ukrainian National University V. Dahl
                     </li>
                     <li>2012-2014
                         East Ukrainian National University of V. Dahl
                     </li>
-                </lu>
+                </ul>
+                <ul class="courses"><p>Courses</p>
+                    <li>JS/FE Pre-School 2022Q4 (Stage0)</li>
+                    <li>HTML (code-basics.com)</li>
+                    <li>CSS (code-basics.com)</li>
+                    <li>JavaScript (code-basics.com)</li>
+                </ul>
             </div>
 
             <div class="work decoration">
                 <h2>Work experience</h2>
-                <p>No have</p>
+                <div class="work-container">
+                    <div class="plants">
+                        <p class="name-project">Website 'Plants'</p>
+                    <ul class="project">
+                        <li><a href="https://mat-kon.github.io/My_projects/plants/">Plants</a></li>
+                        <li><a href="https://github.com/Mat-Kon/My_projects/tree/master/plants">Source plants</a></li>
+                    </ul>
+                    <p>Used skills:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    </div>
+    
+                    <div class="momentum">
+                        <p class="name-project">Web app 'Momentum'</p>
+                    <ul class="project">
+                        <li><a href="https://mat-kon.github.io/My_projects/momentum/">Momentum</a></li>
+                        <li><a href="https://github.com/Mat-Kon/My_projects/tree/master/momentum">Source momentum</a></li>
+                    </ul>
+                    <p>Used skills:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    </div>
+                </div>                                
             </div>
 
             <div class="my-skill decoration">
                 <h2>Skills</h2>
-                <p>No have</p>
+                <ul>
+                    <li>HTML5 (Basic)</li>
+                    <li>CSS (Basic)</li>
+                    <li>JavaScript (Basic)</li>
+                </ul>
             </div>           
 
-            <div class="code decoration">
-                <h2 class="code-button">Code examples</h2>
+            <div class="code decoration" id="code">
+                <h2><span class="code-button">Code examples</span></h2>
                 <pre>
 <div class="my-code">
     <h3>Widget momentum JS code</h3>
@@ -189,13 +233,17 @@
         
         switch (timeOfDay) {
             case 'morning': 
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/morning/${num}.jpg?raw=true`;
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/morning/${num}.jpg?raw=true`;
             case 'afternoon':
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/afternoon/${num}.jpg?raw=true`;
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/afternoon/${num}.jpg?raw=true`;
             case 'evening':
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/evening/${num}.jpg?raw=true`;
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/evening/${num}.jpg?raw=true`;
             case 'night':
-                return `https://github.com/Mat-Kon/stage1-tasks/blob/assets/images/night/${num}.jpg?raw=true`; 
+                return `https://github.com/Mat-Kon/
+                stage1-tasks/blob/assets/images/night/${num}.jpg?raw=true`; 
         }    
     }
     
@@ -245,7 +293,8 @@
     const cityName = document.querySelector('.city');
     
     async function getWeather(city) {  
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&appid=0380bab79ebe14975ff3341abbe0c56c&units=metric`;
+        let url = `https://api.openweathermap.org/data/
+        2.5/weather?q=${city}&lang=en&appid=0380bab79ebe14975ff3341abbe0c56c&units=metric`;
         const res = await fetch(url);
         const data = await res.json();
     
