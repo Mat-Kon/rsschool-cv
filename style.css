@@ -13,11 +13,16 @@ body {
     margin: auto;
     background-color: rgb(40, 40, 40);
 }
+body a {
+    transition: 0.5s;
+}
 
 .header {
+    position: sticky;
+    top: 0px;
     margin: 0px 0px 40px;
     height: 15%;
-    background-color: rgb(92, 2, 114);
+    background-color: rgb(189, 189, 189);
 }
 .menu ul{
     display: flex;
@@ -25,17 +30,19 @@ body {
     list-style-type: none;
 }
 .menu a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
-    border: 1px solid #000;
+    border: 0px solid;
     border-radius: 20px;
     padding: 5px;
     transition: 0.5s;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0px 4px 10px black;
 } 
 .menu a:hover {
-    color: rgb(92, 2, 114);
-    background-color: #000;
+    color: #000;
+    background-color: rgb(189, 189, 189);
 }
 
 .main {
@@ -47,13 +54,24 @@ body {
     height: max-content;
     display: flex;
     flex-direction: column;
-    background-color: rgb(92, 2, 114);
 }
 .left-said img {
     width: 100%;
 }
+.my-photo {
+    width: 250px;
+    height: 330px;
+    background-image: url(./img/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+}
 .contacts {
     margin: 20px 0px 0px;
+    background-color:rgb(189, 189, 189);
+    box-shadow: 0px 0px 30px -9px white;
+    border-radius: 15px;
 }
 .contacts ul {
     font-size: 30px;
@@ -77,13 +95,60 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(92, 2, 114);
+    background-color: rgb(189, 189, 189);
+}
+.strengths {
+    font-size: 20px;
 }
 .name-job {
     width: 56em;
     background-color: rgb(189, 189, 189);
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    box-shadow: -15px 10px 9px -5px black;
+    border-radius: 15px 0px 0px 15px;
+}
+.courses p{
+    font-size: 20px;
+}
+.name-project {
+    font-size: 20px;
+}
+.project li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.plants, .momentum {
+    margin: 10px;
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    border: 2px solid rgb(40, 40, 40);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px #fff;
+}
+.work a {
+    padding: 3px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.work a:hover {
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    border-radius: 10px;
+}
+.code-button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s;
+    
 }
 .my-code {
     display: none;
@@ -98,15 +163,13 @@ body {
 .decoration {
     width: 80%;
 }
-.decoration:hover {
-    color: #fff;
-    cursor: pointer;
-}
 footer {
     display: flex;
     justify-content: space-around;
     margin: 15px 0px 15px;
-    background-color: rgb(92, 2, 114);
+    background-color: rgb(189, 189, 189);
+    box-shadow: 0px 0px 30px -9px white;
+    border-radius: 10px;
 }
 footer a{
     color: #000;
@@ -124,6 +187,6 @@ footer a:hover{
     align-items: center;
 }
 
-@media only screen and (max-width: 380px){
+@media (max-width: 380px){
     
 }
